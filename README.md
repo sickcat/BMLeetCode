@@ -1,2 +1,2 @@
 # BMLeetCode
-my Code in LeetCode
+my hint in LeetCode
