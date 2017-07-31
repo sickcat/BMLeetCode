@@ -1,0 +1,6 @@
+C++ -- O(n)
+using <<unordered_map>> //same as hash map
+unorder_map<int, int> hash;
+hash.find(value) != hash.end() //find it
+hash.count(value) != 0 //better in this problem
+hash[key] = value //insert
