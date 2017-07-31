@@ -1,0 +1,14 @@
+//Longest Substring Without Repeating Characters
+//O(n) hash method
+
+int lengthOfLongestSubstring(string s) {
+        vector<int> dict(256, -1); //hash table to record each character position
+        int maxLen = 0, start = -1; //the substring start position, init -1
+        for (int i = 0; i != s.length(); i++) {
+            if (dict[s[i]] > start)
+                start = dict[s[i]]; //update start when find a repeating character
+            dict[s[i]] = i;
+            maxLen = max(maxLen, i - start);
+        }
+        return maxLen;
+  }
