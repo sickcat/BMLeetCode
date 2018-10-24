@@ -1,6 +1,6 @@
 //Longest Substring Without Repeating Characters
 //O(n) hash method
-
+//test pr
 int lengthOfLongestSubstring(string s) {
         vector<int> dict(256, -1); //hash table to record each character position
         int maxLen = 0, start = -1; //the substring start position, init -1
